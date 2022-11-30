@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="juros.css" />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+    <title>Document</title>
+  </head>
+  <body>
+
+    <main>
+      <div class="container-p">
+        <h1>
+          simulador de investimento
+        </h1>
+        <div class="container-f">
+          
+          <div class="box">
+
+            <div class="input">
+              <label>capital-inicial</label>
+              <input type="text"
+              id="capital_inicial"
+              placeholder="0,00"
+              required="requered"
+              >
+              <span>R$</span>
+            </div>
+
+            <div class="input">
+              <label>valor-mensal</label>
+              <input type="text"
+              id="valor_mensal"
+              placeholder="0,00"
+              required="requered"
+              >
+              <span>R$</span>
+            </div>
+
+          </div>
+
+          <div class="box">
+
+            <div class="input">
+              <label>taxa-juros</label>
+              <input type="text"
+              id="taxa_juros"
+              placeholder="0,00"
+              required="requered"
+              >
+              <span>%</span>
+            </div>
+
+            <div class="input">
+              <label>periodo</label>
+              <input type="number"
+              id="periodo"
+              placeholder="meses"
+              required="requered"
+              >
+            </div>
+
+          </div>
+        </div>
+
+        <div class="buttons">
+
+          <div class="buttons">
+            <button class="calcular" id="calcular">calcular</button>
+            <button class="limpar" id="limpar">limpar</button>
+          </div>
+        </div>
+
+        <div class="container-resultado">
+
+          <div class="icons">
+            <h2>resultado</h2>
+            <div class="i">
+              <a href="https://web.whatsapp.com/" target="_blank"> <i class="bx bxl-whatsapp"></i></a>
+              <a href="#"><i class="bx bx-share-alt abrir-modal"></i></a>
+              <a href="#" value="imprimir" onClick="window.print()"><i class="bx bx-printer"></i></a>
+            </div>
+          </div>
+
+          <div class="container-result">
+
+            <div class="box-result">
+              <span>valor investido</span>
+              <div class="result" id="result1"> 
+              </div>
+            </div>
+
+            <div class="box-result">
+              <span>juros acumulado</span>
+              <div class="result" id="result2"> 
+              </div>
+            </div>
+
+            <div class="box-result">
+              <span>valor total final</span>
+              <div class="result" id="result3"> 
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+        
+      </div>
+    </main>
+
+    <section class="container-modal">
+      <div class="modal">
+        <div class="modal-child">
+
+          <h1>Compartilhe seus investimentos</h1>
+
+          <div class="img"><img src="img/Patinhas.png" alt="img"></div>
+
+          <div class="linha"></div>
+
+          <h2>compartilhe nas redes sociais</h2>
+
+          <div class="icons-modal">
+            <a href="https://www.facebook.com/" target="_blank"><i class="bx bxl-facebook"></i> </a> 
+            <a href="https://twitter.com/" target="_blank"><i class="bx bxl-twitter"></i> </a>
+            <a href="https://web.whatsapp.com/" target="_blank"><i class="bx bxl-whatsapp"></i> </a>
+            <a href="https://www.linkedin.com/feed/"  target="_blank"><i class="bx bxl-linkedin"></i> </a>
+          </div>
+
+          <p>Os valores apresentados são meras simulações. Podendo assim, sofrer interferências de mercado e mudanças nas taxas e regulamentações. Esta página tem caracter Informativo, portanto, não possui valores legais.</p>
+          <span class="fechar-modal"><i class="bx bx-x"></i></span>
+
+        </div>
+      </div>
+    </section>
+
+    <script src="juros.js"></script>
+  </body>
+</html>
